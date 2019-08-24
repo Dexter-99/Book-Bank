@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Book Bank</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <style>
+    #message{
+      display: none;
+    }
+  .success,.error{
+    margin:5px 0px 15px 0px;
+    padding:5px;
+    color:white;
+    border-radius: 5px;
+  }
+  .success
+  {
+    background-color: green;
+  }
+  .error{
+    background-color: red;
+  }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Add Book</h1>
+    <p id="message"></p>
+    <form action="#" id="entry-form">
+      <div>
+        <label for="student_name">Student Name:</label>
+        <input class="u-full-width" type="text" placeholder="Enter Your Name" id="student_name">
+      </div>  
+      <div>
+        <label for="student_rollno">Roll Number:</label>
+        <input class="u-full-width" type="number" placeholder="Enter Your Roll Number" id="student_rollno">
+      </div>  
+      <div>
+        <label for="title">Title:</label>
+        <input class="u-full-width" type="text" placeholder="Enter the title" id="title">
+      </div>  
+      <div>
+        <label for="author">Author:</label>
+        <input class="u-full-width" type="text" placeholder="Enter the Author Name" id="author">
+      </div>  
+      <div>
+        <label for="isbn_no">ISBN#</label>
+        <input class="u-full-width" type="number" placeholder="Enter books's ISBN number" id="isbn_no">
+      </div>  
+      <div>
+        <input type="submit" class="u-full-width button-primary" value="Submit" id="submit">
+      </div>
+    </form>
+    <table class="u-full-width">
+        <thead>
+          <tr>
+            <th>Student Name</th>
+            <th>Roll No.</th>
+            <th>Title</th>
+            <th>Author</th>
+            <th>ISBN</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody id="books-list">
+        </tbody>
+    </table>
+  </div>
+  <script src="./appes6.js"></script>
+</body>
+</html>
